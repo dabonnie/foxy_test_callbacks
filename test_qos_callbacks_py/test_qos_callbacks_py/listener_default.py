@@ -18,8 +18,7 @@ class MinimalSubscriber(Node):
             String,
             'topic',
             self.listener_callback,
-            qos,
-            event_callbacks=callbacks)
+            qos)
 
     def listener_callback(self, msg):
         self.get_logger().info('I heard: "%s"' % msg.data)

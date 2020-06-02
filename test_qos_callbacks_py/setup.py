@@ -20,6 +20,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'talker_incompatible = test_qos_callbacks_py.talker_incompatible:main',
+            'listener_default = test_qos_callbacks_py.listener_default:main',
+            'listener_custom = test_qos_callbacks_py.listener_custom:main',
         ],
     },
 )
